@@ -1,6 +1,8 @@
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
+import utilidades.matematicas;
+
 public class Unidad2 {
     /**
      * @autor Miguel Lapo Tuarez
@@ -50,20 +52,95 @@ public class Unidad2 {
         //Nextline lee todo lo que ingreses, mejor usarlo al final
         //nex para leer de un en uno
 
-     LocalDateTime hoy = LocalDateTime.now();
- System.out.println("Hoy es: " + hoy.getDayOfWeek()); // nombre del día
- System.out.println("El día es: " + hoy.getDayOfMonth());
- System.out.println("El mes es: " + hoy.getMonth()); // nombre del mes
- System.out.println("El año es: " + hoy.getYear());
- System.out.println("Hora: " + hoy.getHour() + " Minutos: " + hoy.getMinute());
- System.out.println(Math.pow(2,5));
+//      LocalDateTime hoy = LocalDateTime.now();
+//  System.out.println("Hoy es: " + hoy.getDayOfWeek()); // nombre del día
+//  System.out.println("El día es: " + hoy.getDayOfMonth());
+//  System.out.println("El mes es: " + hoy.getMonth()); // nombre del mes
+//  System.out.println("El año es: " + hoy.getYear());
+//  System.out.println("Hora: " + hoy.getHour() + " Minutos: " + hoy.getMinute());
+//  System.out.println(Math.pow(2,5));
 
- int max=26;
- int min = 0;
- char letra='a';
- double aleatorio=(int)(Math.random()*(max-min+1)+min);
- System.out.println((char)letra+aleatorio);
- 
+//  int max=26;
+//  int min = 0;
+//  char letra='a';
+//  double aleatorio=(int)(Math.random()*(max-min+1)+min);
+//  System.out.println((char)letra+aleatorio);
+  
+
+
+
+    //Clase 3
+//Utilizar las fuciones sumar y restar de la clase Matematicas
+
+
+// int numero1= 3;
+// int numero2=5;
+// System.out.println("La suma es: "+ matematicas.sumar(numero1,numero2));
+// System.out.println("La multiplicación es: "+ matematicas.multiplicar(numero1,numero2));
+//  System.out.println("El resto de la division 5/2 es : "+ (5%2));
+//  int variable = 2;
+//  variable++; // variable = variable + 1 
+//  System.out.println("La variable vale: "+ variable );
+//   int a = 5;
+//   int b = a++;
+//  variable++; // variable = variable + 1 
+//  System.out.println("La b vale: "+ b );
+
+    //Condiciones IF/ELSE
+    int numero=3;
+    int numero2=5;
+    int resultado;
+    if (numero > numero2){
+        //Si ocurre hara esto
+        resultado=numero+numero2;
+
+    }
+    else{
+        //Si no se cumple hara esto
+        resultado = numero -numero2;
+        System.out.println("NO era mayor")
+    }
+
+    System.out.println(numero+" "+numero2+" "+resultado );
+    //Usando el operador ternario
+    resultado=(numero>numero2) ? numero+numero:numero-numero2;
+    System.out.println(numero+" "+numero2+" "+resultado );
+    System.out.println("Por AQUI VOY");
+
+    //Saber el día de la semana
+    //IF /ELSe encadenado
+
+    int dia = 1;
+
+    if (dia == 1){
+        System.out.println("Hoy es Lunes");  
+    }
+    else if (dia == 2 ){
+        System.out.println("Hoy es Martes");
+    }
+    else if (dia == 3 ){
+        System.out.println("Hoy es Miercoles");
+    }
+    else if (dia == 4 ){
+        System.out.println("Hoy es Jueves");
+    }
+    else if (dia == 5 ){
+        System.out.println("Hoy es Viernes");
+    }
+    else if (dia == 6 ){
+        System.out.println("Hoy es Sabado");
+    }
+    else {
+        System.out.println("Hoy es Domingo");
+    }
+    
+    //SWITCH
+
+    int valor=4;
+    switch (valor){
+        
+    }
+
 
     }
 }
