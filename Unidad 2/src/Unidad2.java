@@ -87,59 +87,88 @@ public class Unidad2 {
 //  System.out.println("La b vale: "+ b );
 
     //Condiciones IF/ELSE
-    int numero=3;
-    int numero2=5;
-    int resultado;
-    if (numero > numero2){
-        //Si ocurre hara esto
-        resultado=numero+numero2;
+    // int numero=3;
+    // int numero2=5;
+    // int resultado;
+    // if (numero > numero2){
+    //     // //Si ocurre hara esto
+    //     resultado=numero+numero2;
 
-    }
-    else{
-        //Si no se cumple hara esto
-        resultado = numero -numero2;
-        System.out.println("NO era mayor")
-    }
+    // }
+    // else{
+    //     //Si no se cumple hara esto
+    //     resultado = numero -numero2;
+    //     System.out.println("NO era mayor")
+    // }
 
-    System.out.println(numero+" "+numero2+" "+resultado );
-    //Usando el operador ternario
-    resultado=(numero>numero2) ? numero+numero:numero-numero2;
-    System.out.println(numero+" "+numero2+" "+resultado );
-    System.out.println("Por AQUI VOY");
+    // System.out.println(numero+" "+numero2+" "+resultado );
+    // //Usando el operador ternario
+    // resultado=(numero>numero2) ? numero+numero:numero-numero2;
+    // System.out.println(numero+" "+numero2+" "+resultado );
+    // System.out.println("Por AQUI VOY");
 
-    //Saber el día de la semana
-    //IF /ELSe encadenado
+    // //Saber el día de la semana
+    // //IF /ELSe encadenado
 
-    int dia = 1;
+    // int dia = 1;
 
-    if (dia == 1){
-        System.out.println("Hoy es Lunes");  
-    }
-    else if (dia == 2 ){
-        System.out.println("Hoy es Martes");
-    }
-    else if (dia == 3 ){
-        System.out.println("Hoy es Miercoles");
-    }
-    else if (dia == 4 ){
-        System.out.println("Hoy es Jueves");
-    }
-    else if (dia == 5 ){
-        System.out.println("Hoy es Viernes");
-    }
-    else if (dia == 6 ){
-        System.out.println("Hoy es Sabado");
-    }
-    else {
-        System.out.println("Hoy es Domingo");
-    }
+    // if (dia == 1){
+    //     System.out.println("Hoy es Lunes");  
+    // }
+    // else if (dia == 2 ){
+    //     System.out.println("Hoy es Martes");
+    // }
+    // else if (dia == 3 ){
+    //     System.out.println("Hoy es Miercoles");
+    // }
+    // else if (dia == 4 ){
+    //     System.out.println("Hoy es Jueves");
+    // }
+    // else if (dia == 5 ){
+    //     System.out.println("Hoy es Viernes");
+    // }
+    // else if (dia == 6 ){
+    //     System.out.println("Hoy es Sabado");
+    // }
+    // else {
+    //     System.out.println("Hoy es Domingo");
+    // }
     
-    //SWITCH
+    // //SWITCH
 
-    int valor=4;
-    switch (valor){
+    // int valor=4;
+    // switch (valor){
+
         
-    }
+    // }
+
+    //Clase 4: Bucles
+    //Estructuras: FOR
+    // for(int i=0; i<=5;i++){        //1Desdedonde ;2Hasta donde ;3de cuanto en cuanto
+    //     System.out.println(i);
+    // }
+
+
+    //Estructura WHILE
+    // ctrl + c para detener un bucle infinito.
+    // int i=0;
+    // while (i<=5){
+    //     System.out.println(i);
+    //     i++;
+    // }
+
+
+    //Estrucutura DO-WHILE (Haz mientras se cumpla la condición)
+    int i = 0;
+    do{
+        System.out.println(i);
+        i++;
+    }while(i<=5);
+
+
+
+
+
 
 
     }
