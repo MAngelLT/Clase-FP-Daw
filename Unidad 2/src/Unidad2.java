@@ -158,15 +158,17 @@ public class Unidad2 {
     // }
 
 
-    //Estrucutura DO-WHILE (Haz mientras se cumpla la condición)
-    int i = 0;
-    do{
-        System.out.println(i);
-        i++;
-    }while(i<=5);
+    // //Estrucutura DO-WHILE (Haz mientras se cumpla la condición)
+    // int i = 0;
+    // do{
+    //     System.out.println(i);
+    //     i++;
+    // }while(i<=5);
 
+    
+    //CLase 5
 
-
+    
 
 
 

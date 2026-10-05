@@ -161,22 +161,87 @@ public class Actividades {
         //Actividad 2
 
 
-        int num;
-        int producto=1;
-        num=sc.nextInt();
-        if (num <=0){
+        // int num;
+        // int producto=1;
+        // num=sc.nextInt();
+        // if (num <=0){
 
-            System.out.println("Los factoriales no pueden se negativos");
+        //     System.out.println("Los factoriales no pueden se negativos");
 
-        }
-        else{
-            for(int i=1; i>=num;i--){
-                producto=producto*i;
-            }
-            System.out.println("El factorial del"+num+"es:"+ producto);
-        }
+        // }
+        // else{
+        //     for(int i=1; i>=num;i--){
+        //         producto=producto*i;
+        //     }
+        //     System.out.println("El factorial del"+num+"es:"+ producto);
+        // }
 
         
+
+        //Actividad : Adivinar número
+
+        //Declaramos variables
+        // int numero, aleatorio,intentos=0;
+        // boolean  encontrado = false;
+        // aleatorio= (int)(Math.random()*100)+1;
+
+        // //Definimos la entrada por teclado
+        // Scanner sd=new Scanner(System.in);
+        // do{
+        //     System.out.println("Dime un número entre 1 y 100");
+        //     numero =sd.nextInt(); sd.nextLine();
+
+        //     //Comprobacion
+
+        //     if (numero>aleatorio){
+        //         System.out.println("El numero es mayor al introducido");
+
+        //     }
+        //     else if (numero<aleatorio){
+        //         System.out.println("El numero es menor al introducido");
+
+        //     }
+        //     else{
+        //         System.out.println("HAs acertado el numero");
+            
+
+
+        //     }
+        //     intentos++;
+            
+
+        //    }while (numero!=aleatorio);
+        //    System.out.println("Has utilizado "+intentos+" intentos");
+
+
+     //Actividad: Calculadora
+        //Declaramos variables
+    
+
+        //double sumar, restar, multiplicar,dividir,numero1,numero2;
+    
+
+
+        // Actividad : MCM
+
+        int numero1, numero2,resto;
+        System.out.println("Ingresa el número ");
+        Scanner usuario=new Scanner(System.in);
+        numero1=usuario.nextInt(); usuario.nextLine();
+        numero2=usuario.nextInt(); usuario.nextLine();
+
+        while(numero2 != 0){
+            resto =numero1%numero2;
+            numero1 = numero2;
+            numero2= resto;
+        }
+
+
+
+  
+
+    
+
 
 
 
