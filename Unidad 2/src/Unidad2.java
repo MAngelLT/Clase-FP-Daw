@@ -166,7 +166,30 @@ public class Unidad2 {
     // }while(i<=5);
 
     
-    //CLase 5
+    //CLase 5: Bucles anidados y 
+
+    // for (int i=1; i<=4; i++){
+    //     if (i%2 == 0 ){  //Mostrar solo las filas pares
+    //         for(int j=i; j<=4; j++){
+    //         System.out.print("*");
+
+    //         }
+    //     }
+    //     System.out.println();
+    //     }
+
+
+
+
+        for (int i=1; i<= 10 ; i++){
+            for(int j=1; j<= 10; j++){
+
+               System.out.print(i+"*"+j+"= "+ (i*j));
+            }
+
+        }
+
+
 
     
 

@@ -1,6 +1,21 @@
 import java.util.Scanner;
 
 public class Actividades {
+
+    final static double PI=3.14159;
+
+
+    public static int maximo(int valor1, int valor2){
+         int maximo;
+         if (valor1>=valor2){
+             maximo=valor1;
+         }
+         else{
+             maximo=valor2;
+         }
+         return maximo;
+        
+    }
     public static void main(String[] args) {
 
 
@@ -21,7 +36,7 @@ public class Actividades {
         // System.out.println("La potencia es : " +(Math.pow(aleatorio, aleatorio2)));
         // System.out.println("La raiz cuadrada del primer numero es: " +(Math.sqrt(aleatorio)));
         // System.out.println("La raiz cuadrada del segundo numero es: " +(Math.cbrt(aleatorio)));
-    
+        
 
         // Actividad 2¿Como sabemos si un número es divisible por 2 y por 3?
 
@@ -38,7 +53,7 @@ public class Actividades {
         //*Actividad 3  30/09/2026
 
 
-        Scanner sc=new Scanner(System.in);
+        // Scanner sc=new Scanner(System.in);
         // double numeroa;
         // double numerob;
         // double numeroc;
@@ -224,20 +239,23 @@ public class Actividades {
 
         // Actividad : MCM
 
-        int numero1, numero2,resto;
-        System.out.println("Ingresa el número ");
-        Scanner usuario=new Scanner(System.in);
-        numero1=usuario.nextInt(); usuario.nextLine();
-        numero2=usuario.nextInt(); usuario.nextLine();
+        // int numero1, numero2,resto;
+        // System.out.println("Ingresa el número ");
+        // Scanner usuario=new Scanner(System.in);
+        // numero1=usuario.nextInt(); usuario.nextLine();
+        // numero2=usuario.nextInt(); usuario.nextLine();
 
-        while(numero2 != 0){
-            resto =numero1%numero2;
-            numero1 = numero2;
-            numero2= resto;
-        }
+        // while(numero2 != 0){
+        //     resto =numero1%numero2;
+        //     numero1 = numero2;
+        //     numero2= resto;
+        // }
 
-
-
+        imprimir("Imprime la ",9);
+        imprimir ("La suma de 3+5 es :",suma(3, 5));
+         actividad1();
+         areacilindro(3.4, 5.6);
+         volumencilindro(3.5, 50);
   
 
     
@@ -248,5 +266,42 @@ public class Actividades {
 
 
     }   
+
+    public static void  imprimir(String cadena,int variable){
+        System.out.println(cadena+variable);
+    }
+
+    public static int suma(int a, int b){
+        return a+b;
+    }
+
+    public static void actividad1(){
+        //Actividad 1, diapositiva 9
+
+
+        //Generar 2 números de manera aleatoria
+        int max=26;
+        int min = 1;
+        double aleatorio=(int)(Math.random()*(max-min+1)+min);
+        double aleatorio2=(int)(Math.random()*(max-min+1)+min);
+        //Realizar las operaciones
+        System.out.println("El primer número es: "+ aleatorio);
+        System.out.println("El segundo número es: "+ aleatorio2);
+        //System.out.println(Math.divideExact(aleatorio, aleatorio2));
+        System.out.println("El cociente es: " +(aleatorio/aleatorio2));
+        System.out.println("La media es: " +((aleatorio+aleatorio2)/2));
+        System.out.println("La potencia es : " +(Math.pow(aleatorio, aleatorio2)));
+        System.out.println("La raiz cuadrada del primer numero es: " +(Math.sqrt(aleatorio)));
+        System.out.println("La raiz cuadrada del segundo numero es: " +(Math.cbrt(aleatorio)));
+    }
+
+    public static void areacilindro(double altura, double radio){
+        double area;
+        
+        System.out.println("El area del cilindro es: "+ (2*PI*(altura+radio)));
+    }
+    public static void volumencilindro(double altura, double radio){
+       System.out.println("El volumen del cilindro es: "+ (PI*(radio*radio)*altura));
+    }
 
 }
