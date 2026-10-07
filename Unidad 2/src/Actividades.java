@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Actividades {
 
+
+//Variable Globales
     final static double PI=3.14159;
 
 
@@ -237,31 +239,29 @@ public class Actividades {
     
 
 
-        // Actividad : MCM
+        // Actividad : MCD
 
-        // int numero1, numero2,resto;
-        // System.out.println("Ingresa el número ");
-        // Scanner usuario=new Scanner(System.in);
-        // numero1=usuario.nextInt(); usuario.nextLine();
-        // numero2=usuario.nextInt(); usuario.nextLine();
+        //MCD();
 
-        // while(numero2 != 0){
-        //     resto =numero1%numero2;
-        //     numero1 = numero2;
-        //     numero2= resto;
-        // }
+      
 
-        imprimir("Imprime la ",9);
-        imprimir ("La suma de 3+5 es :",suma(3, 5));
-         actividad1();
-         areacilindro(3.4, 5.6);
-         volumencilindro(3.5, 50);
-  
+        // Actividad : MCM por hacer.
+
+        // imprimir("Imprime la ",9);
+        // imprimir ("La suma de 3+5 es :",suma(3, 5));
+        //  actividad1();
+        //  areacilindro(3.4, 5.6);
+        //  volumencilindro(3.5, 50);
+
+
 
     
 
 
+        esPar(14);
+        imprimirNumeros(5, 25);
 
+        
 
 
 
@@ -303,5 +303,47 @@ public class Actividades {
     public static void volumencilindro(double altura, double radio){
        System.out.println("El volumen del cilindro es: "+ (PI*(radio*radio)*altura));
     }
+
+    public static void MCD(){
+        int numero1, numero2,resto;
+        System.out.println("Ingresa el número ");
+        Scanner usuario=new Scanner(System.in);
+        numero1=usuario.nextInt(); usuario.nextLine();
+        numero2=usuario.nextInt(); usuario.nextLine();
+        numero1=Math.abs(numero1);
+        numero2=Math.abs(numero2);
+        
+
+        while(numero2 != 0){
+            resto =numero1%numero2;
+            numero1 = numero2;
+            numero2= resto;
+        }
+        System.out.println("El MCD es: "+ numero1);
+
+
+    }
+
+    public static boolean esPar(int numero){
+        
+        if (numero%2==0) return true;
+        else return false;
+
+    }
+    public static boolean esDivisible2y3(int numero){
+        if(numero%2 ==0 && numero%3==0) return true;
+
+        else return false;
+
+    }
+    public static void imprimirNumeros(int inicio,int fin){
+        for( int=i=inicio;int=i=fin;i++){
+            if(esPar(i) && (esDivisible2y3(i))){
+                System.out.print(i+",");
+            }
+        }
+    }
+
+    p
 
 }
