@@ -1,0 +1,72 @@
+*{
+    background-color: rgb(53, 38, 38);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+h1{
+    color:rgb(136, 14, 14);
+    background-color: black;
+    text-align: center;
+    
+}
+p{
+    color: black;
+    text-align: justify;
+
+}
+
+/* para darle estilo a una class se usa la un punto*/
+.impar{
+    color: grey;
+    text-align: justify;
+}
+
+.grande{
+    font-size: 1.5em;
+}
+
+h1.grande{
+    font-size: 2em;
+}
+
+/* para darle estilo al id se usa la almohadilla*/
+#segundo{
+    color: rgb(113, 15, 15);
+    text-align: right;
+}
+
+a{
+    color: blueviolet;
+}
+
+/* cambiar el color de una etiqueta dentro de otra ej: a*/
+p a{
+    color: rgb(37, 14, 58);
+}
+
+
+a[target]{
+    
+    color: green;
+}
+
+p::first-letter{
+    color: blue;
+    font-size: xx-large;
+}
+
+a:hover{
+    background-color: rgb(60, 160, 227);
+}
+
+a:active{
+    background-color: brown;
+}
+a:visited{
+    color: brown;
+}
+
+a:link{
+    
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Ejercicio 1</legend>
+        <form action="/registrardatos.php" autocomplete="off">
+
+            <label for="nombre">Nombre </label>
+            <input type="text" name="fnombre" id="nombre">
+            <br>
+            <label for="clave">Clave </label>
+            <input type="password" name="fclave" id="clave">
+            <br>
+            <label for="edad">Edad </label>
+            <input type="number" name="fedad" id="edad">
+            <br>
+            <label for="dni">DNI </label>
+            <input type="text" name="fdni" id="dni" size="9" pattern="^[0-9]{8}[A-Z]{1}">
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar datos">
+
+
+
+        </form>
+
+    </fieldset>
+        <fieldset>
+        <legend>Ejercicio 2</legend>
+        <form action="/registrardatos.php" autocomplete="off">
+            
+
+        </form>
+
+    </fieldset>
+</body>
+</html>
