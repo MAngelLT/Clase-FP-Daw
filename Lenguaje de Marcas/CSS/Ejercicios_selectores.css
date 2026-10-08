@@ -3,7 +3,30 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
 p{
     color:#555 ;
+}
+
+#primero p{
+    color: #369;
+}
+
+.a{
+    color: #C30;
+}
+
+#primero em{
+    color: #0000BB;
+    background-color: #000000;
+}
+
+em .especial{
+    color: #FFFF00;
+    background: #000000;
+}
+
+span .normal{
+    font-weight:bold;
 }
 
