@@ -1,7 +1,7 @@
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
-import utilidades.Matematicas;
+import utilidades.matematicas;
 
 public class Unidad2 {
     /**
@@ -181,20 +181,103 @@ public class Unidad2 {
 
 
 
-        for (int i=1; i<= 10 ; i++){
-            for(int j=1; j<= 10; j++){
+        // for (int i=1; i<= 10 ; i++){  falta revisar y arreglar
+        //     for(int j=1; j<= 10; j++){
 
-               System.out.print(i+"*"+j+"= "+ (i*j));
-            }
+        //        System.out.print(i+"*"+j+"= "+ (i*j));
+        //     }
 
-        }
+        // }
 
 
 
     
+        //CLASE 6 :Recursividad
+
+        // System.out.println("El factorial vale: "+calcularFactorial(3));
+
+        // int a = 254;
+        // System.out.println(funcion(a, 2));
+        // incre(4);
+        // SumaHastaN(5);
+        // System.out.println(potenciaN(3, 3));
+
+        int edad = -5;
+        assert edad >= 0 : "Edad incorrecta";
+        System.out.println("Fin");
 
 
 
+
+    }
+
+    public static int funcion(int num, int pos){
+        if(num < 10){
+        return num;
+        }else{
+        return  (funcion(num/10, pos-1))+ (int) Math.pow(10, pos) *(num % 10) ;}
+        }
+
+    public static int calcularFactorial(int n){
+        //Caso base : el factorial de 0 es 1
+        if ( n==1) return 1;
+        else{
+            return n*calcularFactorial(n-1);
+        }
+
+    }
+
+
+    public static void incre(int n){
+        if(n>0){
+            
+            System.out.print(n);
+            incre(n-1);
+        }
+        else{
+            System.out.println();
+        }
+        //Pilas de llmada para n=4
+        /// n=4 
+    }
+
+    public static  int SumaHastaN(int n){
+
+        //Enfoque iterativo
+        // int suma= 0;
+        // for(int i=0;i<=n;i++){
+        //     suma=suma+i;
+        // }
+        // return suma;
+
+        //enfoque recursivo
+
+        //Caso base
+        if(n==1){ return 1;}
+        else{//Caso recursivo
+            return n + SumaHastaN(1-n);
+        }
+
+           
+      
+
+    }
+
+
+
+
+    public static int potenciaN(int n, int potencia){
+        if (n== (n*potencia)){return (n*potencia);} // 
+
+        else 
+        { return n*potenciaN(n, potencia-1) ;  }
+
+
+    }
+
+
+    public static int Abinario(int numero){
+        
 
     }
 }
