@@ -167,9 +167,9 @@ public class RelacionActividades {
 
     }
 
-    public static void horario(){
+    public static void Horario(){
         int eleccion;
-        System.out.println("Elige el dia la semana para ver el horario de ese día");
+        System.out.println("Elige una opción para ver el horario de ese día");
         System.out.println("1. Lunes");
         System.out.println("2. Martes");
         System.out.println("3. Miercoles");
@@ -178,7 +178,9 @@ public class RelacionActividades {
         System.out.println("6. Ver horario Completo");
         System.out.println("7. Salir");
         Scanner sc=new Scanner(System.in);
+        System.out.print("Opcion =");
         eleccion = sc.nextInt();sc.nextLine();
+        System.out.println("---------------------------------------");
 
         //Añadimos un bucle para que no se cierre el sistema sin que lo elija el usuario
         while (eleccion != 7){
@@ -188,37 +190,44 @@ public class RelacionActividades {
 
             if (eleccion == 1){
                 System.out.println("El horario del Lunes es:");
+                System.out.println("---------------------------------------");
                 
 
             }
             else if(eleccion ==2){
                 System.out.println("El horario del Martes es:");
-                break;
+                System.out.println("---------------------------------------");
+                
 
             }
             else if(eleccion ==3){
                 System.out.println("El horario del Miercoles es:");
-                break;
+                System.out.println("---------------------------------------");
+                
                 
             }
             else if(eleccion ==4){
                 System.out.println("El horario del Jueves es:");
-                break;
+                System.out.println("---------------------------------------");
+                
                 
             }
             else if(eleccion ==5){
                 System.out.println("El horario del Viernes es:");
-                break;
+                System.out.println("---------------------------------------");
+                
                 
             }
             else if(eleccion ==6){
                 System.out.println("El horario de la semana es:");
-                break;
+                System.out.println("---------------------------------------");
+                
                 
             }
             else {
-                System.out.println("Ingresa una opcion disponible");
+                System.out.println("Opción no disponible.Ingresa uno de los siguientes valores");
 
+                         System.out.println("---------------------------------------");
                         System.out.println("Elige el dia la semana para ver el horario de ese día");
                         System.out.println("1. Lunes");
                         System.out.println("2. Martes");
@@ -227,6 +236,7 @@ public class RelacionActividades {
                         System.out.println("5. Viernes");
                         System.out.println("6. Ver horario Completo");
                         System.out.println("7. Salir");
+                        System.out.print("Opcion =");
                         eleccion = sc.nextInt();sc.nextLine();
 
                 
@@ -239,6 +249,9 @@ public class RelacionActividades {
                 System.out.println("5. Viernes");
                 System.out.println("6. Ver horario Completo");
                 System.out.println("7. Salir");
+                System.out.println("---------------------------------------");
+                System.out.print("Opcion =");
+                eleccion = sc.nextInt();sc.nextLine();
 
 
         }
@@ -247,14 +260,137 @@ public class RelacionActividades {
 
     }
 
+    public static void nomina(){
+
+        //Declaro varibles
+        double nomina,sueldo_base,sueldo_b,sueldo_n,IRPF,dieta, retencionIRPF;
+        sueldo_base =0;
+        int cargo_empleado, estado_civil,dias_viaje;
+        Scanner sc=new Scanner(System.in);
+
+        //Solicito los datos del cargo
+
+        System.out.println("Ingresa tu cargo");
+        System.out.println("1.Prog. junior");
+        System.out.println("2.Prog. senior");
+        System.out.println("3.Jefe de proyecto");
+        System.out.print("= ");
+        cargo_empleado= sc.nextInt(); sc.nextLine();
+
+        //Solicito los días visitando clientes
+        System.out.println("¿Cuántos dias has estado de viaje visitando clientes?");
+        System.out.print("= ");
+        dias_viaje = sc.nextInt(); sc.nextLine();
+
+        //Estado civil del usuario
+        System.out.println("Introduzca su estado civil (1-Soltero, 2-Casado):");
+        System.out.print("= ");
+        estado_civil = sc.nextInt(); sc.nextLine();
+
+        //Sueldo segun el cargo
+        if (cargo_empleado == 1){
+            sueldo_base = 950;
+        }
+        else if (cargo_empleado == 2){
+            sueldo_base= 1200;
+
+        }
+        else if (cargo_empleado == 3){
+            sueldo_base= 1600;
+
+        }
+        
+        dieta= dias_viaje*30;
+        sueldo_b = sueldo_base + dieta;
+      
+        // Impuesto sobre la Renta de Personas Físicas
+
+        if (estado_civil == 1){
+            IRPF= 0.25;  
+        }
+        else{
+            IRPF= 0.20;
+        }
+        
+        //Retención de IRPF
+        retencionIRPF= sueldo_b * IRPF;
+        sueldo_n = sueldo_b - retencionIRPF;  //Sueldo neto
+
+        System.out.println("-------------------------");
+        System.out.println("Sueldo base         "+sueldo_base);
+        System.out.println("Dietas ("+dias_viaje+" viajes)      "+ dieta);
+        System.out.println("-------------------------");
+        System.out.println("Sueldo bruto         " + sueldo_b);
+        System.out.println("Retención IRPF        "+ retencionIRPF);
+        System.out.println("-------------------------");
+        System.out.println("Sueldo neto         "+sueldo_n);
+        System.out.println("-------------------------");
+  
+    }
+
+    public  static void ejercicio7(){
+
+        int numero;
+        int numero_positivos,cont_posit=0,cont_neg=0,cont_sietes=0,cont_numeros=0;
+        double media=0,sumatotal=0;
+
+        //Pedimos el primer numero al usuario
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Ingresa un número entero (0 para salir)");
+        numero = sc.nextInt(); sc.nextLine();
+
+        while (numero !=0) {
+
+            // Comprobamos si es positivo o negativo
+            if (numero >0){
+                cont_posit++;
+            }
+            else{
+                cont_neg ++;
+            }
+
+            // Comprobamos los sietes
+            if(numero==7 || numero == -7){
+                cont_sietes ++;
+            }
+
+            // Contadores para la media
+
+            sumatotal = sumatotal + numero;
+            cont_numeros ++;
+
+            System.out.println("Ingresa un número entero (0 para salir)");
+            numero = sc.nextInt(); sc.nextLine();
+
+
+            
+        }
+
+        media = sumatotal/cont_numeros;
+        System.out.println("Números positivos ingresados son : "+cont_posit);
+        System.out.println("Números negaticos ingresados son : "+cont_neg);
+        System.out.println("La media es: "+ media);
+        System.out.println("El número 7 o -7  se han repetido "+cont_sietes+" veces.");
+
+
+    }
+
+
+
+
     public static void main(String[] args) {
 
         // saludo();
 
         // salariosemanal();
-        // SignoDelZodiaco();
+        //SignoDelZodiaco();
         // NotaDeTrimestre();
-        horario();
+        //Horario();
+        //nomina();
+        //ejercicio7();
+        
+
+
     
     }
     

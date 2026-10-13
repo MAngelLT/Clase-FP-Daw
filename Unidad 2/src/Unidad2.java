@@ -1,7 +1,7 @@
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
-import utilidades.Matematicas;
+import utilidades.matematicas;
 
 public class Unidad2 {
     /**
