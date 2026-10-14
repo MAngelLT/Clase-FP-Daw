@@ -202,15 +202,28 @@ public class Unidad2 {
         // SumaHastaN(5);
         // System.out.println(potenciaN(3, 3));
 
-        int edad = -5;
-        assert edad >= 0 : "Edad incorrecta";
-        System.out.println("Fin");
+        // int edad = -5;
+        // assert edad >= 0 : "Edad incorrecta";
+        // System.out.println("Fin");
 
 
+        //Atender excepciones
 
+
+        // double resultado = dividir(10, 0);
+        // System.out.println(resultado);
+
+
+        //Depuración del programa
+
+        int[] numeros = {10, 20, 30, 40, 50};
+        System.out.println("Elemento en posición 2: " + numeros[2]);
+        System.out.println("Elemento en posición 4: " + numeros[4]);
+
+        
 
     }
-
+    
     public static int funcion(int num, int pos){
         if(num < 10){
         return num;
@@ -276,9 +289,14 @@ public class Unidad2 {
     }
 
 
-    public static int Abinario(int numero){
-        
 
+
+    public static double dividir(double numerador,double denominador) throws Exception{
+
+        return numerador/denominador;
+        
     }
+
+    
 }
 
