@@ -375,6 +375,103 @@ public class RelacionActividades {
 
     }
 
+    public static void serieFibonacci(){
+        int num_limite;
+        int resultado=0,digito2=1;
+        int siguiente;
+
+        //le pedimos al usuario que ingrese el numero limite de la serie.
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Ingresa el numero hasta donde se detiene la serie(mayor que 0)");
+        num_limite = sc.nextInt();sc.nextLine();
+
+        //
+        System.out.print("La serie Fibonacci es: ");
+        for (int i=0; i<=num_limite;i++){
+            System.out.print(resultado+", ");
+            siguiente= resultado+digito2; 
+            resultado=digito2;
+            digito2= siguiente;
+
+        }
+
+
+    }
+
+    public static void numerosPrimos1_100(){
+
+        Scanner sc=new Scanner(System.in);
+        int num_usu;
+        System.out.print("Ingresa un numero del 1 al 100 para verificar si es primo: ");
+        num_usu=sc.nextInt();sc.nextLine();
+
+        boolean primo= true;
+        if (num_usu<=1){
+            primo=false;
+        }
+        else{
+            for(int i=2;i<=Math.sqrt(num_usu);i++){
+                if (num_usu % i==0){
+                    primo=false;
+                    break;
+                }
+
+            }
+            if (primo==true){
+                System.out.println("Es primo");
+            }
+            else{
+                System.out.println("No es primo");
+            }
+        }
+        
+
+
+    }
+
+    public static void pares_e_impares_en_un_numero(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Ingresa un número para saber cuantos  pares e impares tiene ");
+        int num_usu,pares,impares;
+        num_usu=sc.nextInt();sc.nextLine();
+
+        impares = contarImpares(num_usu);
+        pares = contarPares(num_usu);
+
+        System.out.println("El numero "+num_usu+" tiene "+pares+" pares y "+impares+" impares.");
+
+
+
+    }
+    public static int contarPares(int num_usu){//función para contar los pares
+        int contador=0;
+        if (num_usu==0){
+            return 1;
+        }
+        while(num_usu>0){
+            int digito= num_usu%10; //ingresamos el valor del ultimo digito 
+            if(digito% 2==0){
+                contador++; //si es par añadimos 1 al contador
+            }
+            num_usu=num_usu/10; //dividimos para eliminar el ultimo digito
+        }
+        return contador; //regresa la cantidad de num pares
+    }
+
+    public static int contarImpares(int num_usu){
+        int contador =0;
+        while(num_usu>0){
+            int digito =num_usu %10 ;
+            if (digito%2 !=0){
+                contador++;
+            }
+            num_usu=num_usu/10;
+        }
+        return contador;
+    }
+
+
+
 
 
 
@@ -388,6 +485,9 @@ public class RelacionActividades {
         //Horario();
         //nomina();
         //ejercicio7();
+        //serieFibonacci();
+        //numerosPrimos1_100();
+        //pares_e_impares_en_un_numero();
         
 
 

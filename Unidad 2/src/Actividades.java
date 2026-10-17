@@ -337,13 +337,14 @@ public class Actividades {
 
     }
     public static void imprimirNumeros(int inicio,int fin){
-        for( int=i=inicio;int=i=fin;i++){
+        
+        for( int i= inicio; i<=fin;i++){
             if(esPar(i) && (esDivisible2y3(i))){
                 System.out.print(i+",");
             }
         }
     }
 
-    p
+    
 
 }
