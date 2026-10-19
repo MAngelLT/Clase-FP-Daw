@@ -266,12 +266,12 @@ public class Unidad2 {
         //enfoque recursivo
 
         //Caso base
-        if(n==1){ return 1;}
-        else{//Caso recursivo
-            return n + SumaHastaN(1-n);
-        }
+        // if(n==1){ return 1;}
+        // else{//Caso recursivo
+        //     return n + SumaHastaN(1-n);
+        // }
 
-           
+               
       
 
     }

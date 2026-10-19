@@ -1,0 +1,51 @@
+*{
+    background-color: #000;
+    cursor:url(/img/cursor.png),auto;
+
+}
+
+
+nav button,nav button a{
+    color: #f1f1f1;
+    border-radius: 7px ;
+    background-color: grey;
+    
+    
+
+}
+a{
+    font-family: 'Montserrat',serif;
+}
+a:hover{
+    color:grey;
+    background-color:#f1f1f1;
+}
+a:active{
+
+}
+
+
+h1{
+    color: #fff;
+    text-decoration: overline;
+    text-shadow: #f1f1f1;
+
+
+}
+
+.primero {
+    color:rgb(146, 3, 3);
+}
+.primero::first-line{
+    font-variant: small-caps;
+}
+.segundo{
+    color: rgb(94, 12, 12) ;
+    letter-spacing: 2px;
+    word-spacing: 2px;    
+}
+.segundo::first-letter{
+    font-size: large
+
+
+}
