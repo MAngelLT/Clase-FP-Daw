@@ -443,6 +443,7 @@ public class RelacionActividades {
 
 
     }
+    
     public static int contarPares(int num_usu){//función para contar los pares
         int contador=0;
         if (num_usu==0){
