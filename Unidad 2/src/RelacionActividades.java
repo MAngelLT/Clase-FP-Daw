@@ -443,6 +443,7 @@ public class RelacionActividades {
 
 
     }
+    
     public static int contarPares(int num_usu){//función para contar los pares
         int contador=0;
         if (num_usu==0){
@@ -477,17 +478,17 @@ public class RelacionActividades {
 
     public static void main(String[] args) {
 
-        // saludo();
+        // saludo(); //actividad 1
 
-        // salariosemanal();
-        //SignoDelZodiaco();
-        // NotaDeTrimestre();
-        //Horario();
-        //nomina();
-        //ejercicio7();
-        //serieFibonacci();
-        //numerosPrimos1_100();
-        //pares_e_impares_en_un_numero();
+        // salariosemanal(); //actividad 2
+        //SignoDelZodiaco(); //actividad 3
+        // NotaDeTrimestre(); //actividad 4
+        //Horario(); //actividad 5
+        //nomina(); //actividad 6
+        //ejercicio7(); //actividad 7
+        //serieFibonacci(); //actividad 8
+        //numerosPrimos1_100(); //actividad 9
+        //pares_e_impares_en_un_numero(); //actividad 10
         
 
 
