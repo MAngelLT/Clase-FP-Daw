@@ -115,25 +115,27 @@ public class RelacionActividades {
 
     public static void NotaDeTrimestre(){
 
-        // falta añadirlo en un bucle, el programa sigue despues de saber que esta mal, sino en Cond anidados.
+        
         double nota1, nota2, media, medianueva, recuperacion;
 
         Scanner sc=new Scanner(System.in);
 
         //Pedimos al usuario las notas / Usamos una entrada double para posibles decimales
-        
+        boolean nota_correcta=true;
         System.out.println("Ingresa tu primera nota");
         nota1=sc.nextDouble(); sc.nextLine();
         if (nota1>10 || nota1 <0){
             System.out.println("La nota introducida no es valida");
+            nota_correcta=false;
         }
 
         System.out.println("Ingresa tu segunda nota");
         nota2=sc.nextDouble(); sc.nextLine();
         if (nota2>10 || nota2 <0){
             System.out.println("La nota introducida no es valida");
+            nota_correcta=false;
         }
-
+        if(nota_correcta==true){
        media = (nota1 + nota2) / 2;
        
        if (media >= 5){
@@ -159,6 +161,7 @@ public class RelacionActividades {
             System.out.println("No Apto, tu nota final es. "+media);
             
         }
+    }
 
         
 
@@ -331,7 +334,7 @@ public class RelacionActividades {
     public  static void ejercicio7(){
 
         int numero;
-        int numero_positivos,cont_posit=0,cont_neg=0,cont_sietes=0,cont_numeros=0;
+        int cont_posit=0,cont_neg=0,cont_sietes=0,cont_numeros=0;
         double media=0,sumatotal=0;
 
         //Pedimos el primer numero al usuario
