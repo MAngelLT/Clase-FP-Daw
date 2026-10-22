@@ -1,0 +1,20 @@
+*{
+    border: 0.1px solid rgb(202, 43, 43);
+    
+
+}
+div{
+    background-color: grey;
+
+}
+div div div{
+    display: inline-block;
+    width: 15%;
+    padding: 13px;
+
+    margin: none;
+
+}
+.medio{
+    
+}

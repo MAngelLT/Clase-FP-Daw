@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 enum estadoCivil{
-    Soltero,Casado,Divorsiado
+    Soltero,Casado,Divorciado
 }
 
 public class Persona2 {
