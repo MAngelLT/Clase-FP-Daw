@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    /* Margen entre el padre y el hijo */
+    padding: 0;
+    /* relleno entre el borde y el contenido */
+    border: 1px solid black;
+}
+
+body{
+    background-color: rgb(181, 167, 132)
+}
+
+h1{
+    /* margin: 5px;
+    
+    margin-top: 5px;
+    margen de arriba
+
+    margin-bottom:10px ;
+    margen de abajo
+
+    margin-left: 15px;
+    margin-right: 10px; */
+
+    margin: 5px 10px 10px 15px ;
+    padding: 5px 10px 10px 15px;
+    /* orden arriba , derecha,abajo e izquierda */
+
+    background-color: rgb(177, 152, 200);
+
+}
+
+h2{
+    margin: 5px 15px;
+    background-image: url(../img/hallowen.jpg);
+    width: 50%;
+    width: 25vw;
+    
+}
+header, footer{
+    width: 10vh;
+}
+
+span{
+    display:inline-block;
+    max-width: 2px;
+}
+
+p{
+    margin: 0 auto;
+    display: inline-block;
+}
