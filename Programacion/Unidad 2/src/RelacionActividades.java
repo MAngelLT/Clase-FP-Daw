@@ -488,7 +488,7 @@ public class RelacionActividades {
         //ejercicio7(); //actividad 7
         //serieFibonacci(); //actividad 8
         //numerosPrimos1_100(); //actividad 9
-        //pares_e_impares_en_un_numero(); //actividad 10
+        // pares_e_impares_en_un_numero(); //actividad 10
         
 
 

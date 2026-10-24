@@ -19,7 +19,7 @@ public class Actividades {
         
         }
 
-    public static void Actividad1(){
+    public static void actividad1(){
 
         //Generar 2 números de manera aleatoria
         int max=99;
@@ -497,7 +497,7 @@ public class Actividades {
 
 
         // Actividad 1, genera dos números aleatorios y nos da el cociente, media, potencia y raiz cuadrada
-        //Actividad1();
+        // actividad1();
         
         // Actividad 2: Conocer si un número es divisible por 2 y 3.
         //actividad2();
@@ -515,13 +515,13 @@ public class Actividades {
         //actividad5();
 
         // Actividad 6, Multiplos de 2 y 3 entre 50 y 200
-        //Actividad6();
+        //actividad6();
         
         // Actividad 7: Factorial de un numero introducido
-        //actividad7();
+        // actividad7();
         
         // Actividad 8 : programa que muestre la edad máxima , mínima, media y cuantos son mayor de edad de un grupo de alumnos.
-        //actividad8();
+        // actividad8();
         
         // Actividad 9  programa para adivinar un número aleatorio entre 1 y 100
         //actividad9();
@@ -530,28 +530,28 @@ public class Actividades {
         //actividad10();
 
         // Actividad 11 , MCM de dos números
-        //Actividad11MCM();
+        //actividad11MCM();
 
         // Actividad 11, MCD de dos números
-        //Actividad11MCD();
+        //actividad11MCD();
         
         // Actividad 12: programa que muestra las tablas de multiplicar del 1 al 10
         //actividad12();
         
         // Actividad 13 : Crear un programa que pide la altura y el radio para calcular el area y el volumen de un cilindro
-        //actividad13_calcularCilindro(12.4,34.5);
+        // actividad13_calcularCilindro(12.4,34.5);
         
         // Actividad 14:  imprimir los números pares divisibles por 2 y 3 que hay entre 1 y 20 usando dos funciones(esPar y esDivisible2y3)
-        //actividad14(1,20);
+        // actividad14(1,20);
 
         // Actividad 15:  Función que devuelve la cantidad de dígitos de un número (recursiva)
-        //System.out.println(actividad15_contarDigitos(378));;
+        // System.out.println(actividad15_contarDigitos(378));
 
         // Actividad 16:  Función que devuelve la suma de los números naturales desde 1 hasta N (Recursiva)
-        //System.out.println(actividad16_sumaRecursiva(5));
+        // System.out.println(actividad16_sumaRecursiva(5));
 
         // Actividad 17:  Función que calcula a^b usando recursividad
-        //System.out.println(actividad17_potencia(2,4));
+        // System.out.println(actividad17_potencia(2,4));
 
 
         
