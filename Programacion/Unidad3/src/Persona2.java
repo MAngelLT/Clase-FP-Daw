@@ -15,7 +15,7 @@ public class Persona2 {
     String DNI;
     static int hijos;
     Persona2 pareja;
-     estado; 
+    String e; 
 
     //Constructor defecto
     public Persona2(){

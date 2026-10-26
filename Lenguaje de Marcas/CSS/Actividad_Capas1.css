@@ -1,0 +1,38 @@
+body{
+    background-image: url(../img/star-wars.jpg);
+    padding-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+
+}
+div {
+    background-color: white;
+    text-align: center;
+    border-color: #e01717;
+
+}
+
+.primero{
+    margin-top: 10px 50px 100px 50px;
+    border: 3px solid;    
+    padding: 20px;
+    border-color: #e01717;
+}
+
+.segundo{
+    border-color: #e01717;
+    padding: 20px 0px;
+    border:  dotted #e01717;
+
+    border-top: none;
+    border-bottom: none;
+    
+    max-width: 1170px;
+    margin: 20px;
+   
+    
+
+}
