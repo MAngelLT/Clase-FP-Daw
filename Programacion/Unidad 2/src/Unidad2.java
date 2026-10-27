@@ -165,6 +165,19 @@ public class Unidad2 {
     //     i++;
     // }while(i<=5);
 
+     //ESTRUCTURA WHILE
+        // int i=0;
+        // while(i<0){
+        //     System.out.println(i);
+        //     i++;
+        // }
+        // //ESTRUCTURA DO-WHILE
+        // i=0;
+        // do{
+        //     System.out.println(i);
+        //     i++;
+        // }while(i<0);
+
     
     //CLase 5: Bucles anidados y 
 
@@ -194,6 +207,17 @@ public class Unidad2 {
     
         //CLASE 6 :Recursividad
 
+            /// PILA DE LLAMADAS PARA 254
+        /// 254 -> 4*10^2+funcion(25,1)
+        ///                 -> 5*10¹+funcion(2,0)
+        ///                         -> 2
+        /// 
+        /// Una vez cambio a (funcion(num/10, pos-1))+(num % 10)*(int) Math.pow(10, pos) ;
+        /// 254 -> funcion(25,1)+4*10²
+        ///           -> funcion(2,0)+5*10¹
+        ///                 -> 2
+        /// 
+
         // System.out.println("El factorial vale: "+calcularFactorial(3));
 
         // int a = 254;
@@ -207,7 +231,50 @@ public class Unidad2 {
         // System.out.println("Fin");
 
 
+        //ASERT Y EXCEPCIONES
+        // int edad = -5;
+        // assert edad >= 0 : "Edad incorrecta";
+        // System.out.println("Fin");
+
+
+
         //Atender excepciones
+           try{
+            imprimirDivision();  // Fuera del main
+        }catch(Exception e){
+            System.out.println("");
+        }
+        
+
+        public class DivisionConExcepciones {
+
+    public static void imprimirDivision() throws Exception {
+        /* 
+         * Bloque try: Intentamos ejecutar el código que 
+         * puede llegar a fallar (como una división).
+         */
+        try {
+            int resultado = dividir(10, 3); // Intentamos dividir 10 entre 3
+            System.out.println(resultado);   // Si sale bien, imprimimos el resultado
+        } 
+        /* 
+         * Bloque catch: Atrapa únicamente el error aritmético 
+         * (por ejemplo, si intentaras dividir entre 0).
+         */
+        catch (ArithmeticException e) {
+            System.out.println("Error1"); // Mensaje alternativo si ocurre un fallo aritmético
+        }
+    }
+
+    /* 
+     * Método dividir: Realiza la operación matemática básica.
+     * Declara 'throws Exception' para advertir sobre posibles incidencias[cite: 1, 2].
+     */
+    public static int dividir(int numerador, int denominador) throws Exception {
+        return numerador / denominador; // Retorna el cálculo de la división
+    }
+
+
 
 
         // double resultado = dividir(10, 0);
@@ -296,6 +363,8 @@ public class Unidad2 {
         return numerador/denominador;
         
     }
+
+    
 
     
 }
