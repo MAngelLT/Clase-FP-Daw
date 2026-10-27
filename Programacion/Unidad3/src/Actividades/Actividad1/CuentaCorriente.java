@@ -1,45 +1,43 @@
 package Actividades.Actividad1;
 
-import java.time.LocalDate;
 
-enum genero{
-    Masculino,Femenino
-}
-enum estadoCivil{
-    Casado,Soltero,Divorciado
-}
 
 public class CuentaCorriente {
-    //Atributos
-    private String nombre;
-    private String DNI;
-    private LocalDate fechaNacimiento;
-    private String direccion;
-    private String genero;
-    private String estadoCivil;
-    
+    //Datos miembro
+    private String numeroCuenta;
+    private double saldo;
+    private Persona3 cliente;
 
-    public class Persona{
-
-        String nombre;
-        String DNI;
-        LocalDate fechaNacimiento;
-        String direccion;
-        String genero;
-        String estadoCivil;
-        
-        
+    //Constructores
+    public CuentaCorriente(){}
+    public CuentaCorriente(String numeroCuenta,double saldo){
+        this.numeroCuenta=numeroCuenta;
+        this.saldo=saldo;
     }
-    public class numeroCuenta{
-        
-
+    public CuentaCorriente(CuentaCorriente copia){
+        this.numeroCuenta=copia.getNumeroCuenta();
+        this.saldo=copia.getSaldo();
+        this.cliente=copia.getCliente();
     }
-
-    public class saldo{
-
+    //Métodos
+    public String getNumeroCuenta() {
+        return numeroCuenta;
     }
-
-
+    public void setNumeroCuenta(String numeroCuenta) {
+        this.numeroCuenta = numeroCuenta;
+    }
+    public double getSaldo() {
+        return saldo;
+    }
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+    public Persona3 getCliente() {
+        return cliente;
+    }
+    public void setCliente(Persona3 cliente) {
+        this.cliente = cliente;
+    }   
 
 
     public static void main(String[] args) {
