@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.position-static{
+    position: static;
+    border: solid 1px blue;
+}
+
+.position-relative{
+    position: relative;
+    border: solid 1px red;
+    left: 10px;
+
+    /* top: 20px; */
+    /* bottom: 20px; */
+}
+
+.position-fixed{
+    position: fixed;
+    border: solid 1px green;
+    right: 0px;
+    bottom: 30px;
+
+}
+.position-absolute{
+    position: absolute;
+    border: solid 1px orange;
+    left: 50px;
+}
+
+/* .position-fixed img{
+    width: 50vW;
+
+
+} */
+ .position-sticky img{
+    width: 50vW;
+
+
+}
