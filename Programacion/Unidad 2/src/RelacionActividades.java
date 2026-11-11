@@ -484,7 +484,7 @@ public class RelacionActividades {
         // saludo(); //actividad 1
 
         // salariosemanal(); //actividad 2
-        //SignoDelZodiaco(); //actividad 3
+        SignoDelZodiaco(); //actividad 3
         // NotaDeTrimestre(); //actividad 4
         //Horario(); //actividad 5
         //nomina(); //actividad 6
