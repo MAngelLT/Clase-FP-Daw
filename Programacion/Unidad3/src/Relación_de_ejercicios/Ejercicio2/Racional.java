@@ -30,6 +30,7 @@ public class Racional {
     //métodos
     public void asignaNumerador(int x){
         numerador=x;
+        
 
 
     }
@@ -37,6 +38,7 @@ public class Racional {
     public void asignaDenominador(int y){
 
         denominador=y;
+        
      
 
     }
@@ -49,10 +51,30 @@ public class Racional {
             System.out.println("estas dividiendo por 0!!!!");
         }
 
+        System.out.println("el numerador es "+this.numerador);
+        System.out.println("El denominador es "+this.denominador);
+
+    }
+
+    public void imprimirSuma(){
+
+
+    }
+
+    public void imprimirResta(){
+
+    }
+
+    public void imprimirProducto(){
+        
+    }
+
+    public void imprimirDivision(){
+        
     }
 
     public static void main(String[] args) {
-        Racional op1=new Racional(14, 0);
+        Racional op1=new Racional(14, 2);
 
         op1.imprimirRacional();
         
