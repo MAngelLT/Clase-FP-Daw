@@ -4,6 +4,8 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 public class LeerImagen {
 
+    //copiando bytes!!  transformas una imagen  JPG a PNG
+
     public static void main(String[] args) {
     // Rutas de entrada y salida
         String rutaEntrada = "C:/Users/usuario/Desktop/Programación/Clase-FP-Daw/Lenguaje de Marcas/img/hallowen2.jpg";
