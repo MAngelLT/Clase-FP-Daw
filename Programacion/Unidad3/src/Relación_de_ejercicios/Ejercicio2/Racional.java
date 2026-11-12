@@ -21,23 +21,21 @@ public class Racional {
     }
 
     //constructor
-    public Racional(int numerador, int denominador){
-        this.numerador=numerador;
-        this.denominador=denominador;
+    public Racional(){
+ 
     }
 
 
     //métodos
     public void asignaNumerador(int x){
-        numerador=x;
-        
+        this.numerador=x;
 
 
     }
     
     public void asignaDenominador(int y){
 
-        denominador=y;
+        this.denominador=y;
         
      
 
@@ -56,9 +54,16 @@ public class Racional {
 
     }
 
-    public void imprimirSuma(){
+    public void imprimirSuma( Racional r){
+        
 
 
+
+    }
+    public int mcm(int num1,int num2){
+        
+        return num1* num2;
+        // buscar  mcm
     }
 
     public void imprimirResta(){
@@ -69,14 +74,23 @@ public class Racional {
         
     }
 
-    public void imprimirDivision(){
+    public void imprimirDivision(Racional r){
+        int num= this.numerador*r.getNumerador();
+        int dem= this.denominador*r.getDenominador();
         
     }
 
     public static void main(String[] args) {
-        Racional op1=new Racional(14, 2);
 
-        op1.imprimirRacional();
+
+        Racional uno=new Racional();
+        uno.setNumerador(4);
+        uno.setDenominador(2);
+
+        Racional dos=new Racional();
+        dos.setNumerador(9);
+        dos.setDenominador(3);
+        
         
     }
 
