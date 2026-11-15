@@ -10,74 +10,52 @@ public class tarjeta {
     private cliente cliente;
     
 
-
+    //constructor por defecto
+    public tarjeta() {}
 
     //constructor con parametros
 
-    public tarjeta(int codigo,String nombre, String fechaVenc,int numero){
-
-        this.codigo=codigo;
-        this.nombre=nombre;
-        this.fechaVenc=fechaVenc;
-        this.numero=numero;
+    public tarjeta(int codigo, String nombre, String fechaVenc, int numero, cliente cliente){
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.fechaVenc = fechaVenc;
+        this.numero = numero;
+        this.cliente = cliente;
 
     }
 
     //getters y setters
 
-
-
     public int getNumero() {
         return numero;
     }
-
-
 
     public void setNumero(int numero) {
         this.numero = numero;
     }
 
-
-
     public String getNombre() {
         return nombre;
     }
-
-
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-
-
     public int getCodigo() {
         return codigo;
     }
-
-
 
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
-
-
     public String getFechaVenc() {
         return fechaVenc;
     }
 
-
-
     public void setFechaVenc(String fechaVenc) {
         this.fechaVenc = fechaVenc;
-    }
-
-
-    public static void main(String[] args) {
-
-        tarjeta t1=new tarjeta(0, null, null, 0);
-        
     }
 
     public cliente getCliente() {
@@ -87,6 +65,17 @@ public class tarjeta {
     public void setCliente(cliente cliente) {
         this.cliente = cliente;
     }
+    //métodos
+    public void imprimir() {
+        System.out.println("Tarjeta: " + this.nombre + " | Número: " + this.numero);
+        System.out.println("Código: " + this.codigo + " | Vencimiento: " + this.fechaVenc);
+        if (this.cliente != null) {
+            System.out.println("Titular: " + this.cliente.getNombre());
+        }
+        System.out.println("-----------------------------------------------------------");
+    }
+
+
 
 
 

@@ -4,16 +4,23 @@ public class empleado {
     private String DNI;
     private String nombre;
     private String legajo;
-    private int telefonos;
+    private int telefono;
     private String domicilio;
     //constructores
     public empleado(){}
-    public empleado(String DNI,String nombre){
-        this.DNI= DNI;
-        this.nombre=nombre;
+    public empleado(String DNI,String nombre,String legajo, int telefono, String domicilio){
+        this.DNI = DNI;
+        this.nombre = nombre;
+        this.legajo = legajo;
+        this.telefono = telefono;
+        this.domicilio = domicilio;
     }
 
     //getters y setters
+    
+    public static void main(String[] args) {
+        
+    }
     public String getDNI() {
         return DNI;
     }
@@ -32,11 +39,11 @@ public class empleado {
     public void setLegajo(String legajo) {
         this.legajo = legajo;
     }
-    public int getTelefonos() {
-        return telefonos;
+    public int getTelefono() {
+        return telefono;
     }
-    public void setTelefonos(int telefonos) {
-        this.telefonos = telefonos;
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
     }
     public String getDomicilio() {
         return domicilio;
@@ -45,15 +52,11 @@ public class empleado {
         this.domicilio = domicilio;
     }
 
-    
-
-
-
-
-
-
-    public static void main(String[] args) {
-        
+    //metodos
+    public void imprimir() {
+        System.out.println("Datos del empleado: " + this.nombre + " // Legajo: " + this.legajo + " // DNI: " + this.DNI+ " // Teléfono: " + this.telefono);
+        System.out.println("Domicilio del empleado: " + this.domicilio );
+        System.out.println("-----------------------------------------------------------");
     }
 
     

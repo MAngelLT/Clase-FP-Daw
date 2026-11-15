@@ -1,4 +1,3 @@
-
 package Relación_de_ejercicios.Ejercicio3.Ejercicio3.src;
 
 
@@ -12,8 +11,12 @@ public class cliente {
     private int codigo;
 
     //getters y setters
-    public String nombre() {
+
+    public String getNombre() {
         return nombre;
+    }
+       public void setNombre(String nombre) {
+        this.nombre=nombre;
     }
     public String getDNI() {
         return DNI;
@@ -39,29 +42,24 @@ public class cliente {
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
+    //constructores
+    public cliente(){}
 
-    public cliente(int codigo,String DNI,String nombre,String fechaNacimiento){
+    public cliente(int codigo,String DNI,String nombre,String fechaNacimiento,String ciudad){
         this.codigo=codigo;
         this.DNI=DNI;
         this.nombre=nombre;
         this.fechaNacimiento=fechaNacimiento;
+        this.ciudad = ciudad;
 
     }
     
     public void imprimir(){
-        
-    
-        System.out.println();
+        System.out.println("Cliente: " + this.nombre + " /// Código: " + this.codigo);
+        System.out.println("DNI: " + this.DNI + " /// Ciudad: " + this.ciudad + " /// Fecha Nac: " + this.fechaNacimiento);
+        System.out.println("-----------------------------------------------------------");
     }
 
-
-    public static void main(String[] args) {
-
-        cliente p1=new cliente(001, "77777777A", "jeronimo","10/07/2032" );
-
-        p1.imprimir();
-        
-    }
 
 
 

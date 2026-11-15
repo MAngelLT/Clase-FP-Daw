@@ -11,10 +11,53 @@ public class fabrica {
     
 
     public fabrica(){}
-    public fabrica(int CUIT,String nombre, String gerente,int cantEmp){
+    public fabrica(int CUIT, String nombre, String pais, String gerente, int cantEmp){
+        this.CUIT = CUIT;
+        this.nombre = nombre;
+        this.pais = pais;
+        this.gerente = gerente;
+        this.cantEmp = cantEmp;
 
 
+    }
 
+    //getters y setters
+    public int getCUIT() {
+        return CUIT;
+    }
+    public void setCUIT(int cUIT) {
+        CUIT = cUIT;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getPais() {
+        return pais;
+    }
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+    public String getGerente() {
+        return gerente;
+    }
+    public void setGerente(String gerente) {
+        this.gerente = gerente;
+    }
+    public int getCantEmp() {
+        return cantEmp;
+    }
+    public void setCantEmp(int cantEmp) {
+        this.cantEmp = cantEmp;
+    }
+
+    //métodos
+    public void imprimir() {
+        System.out.println("Fábrica: " + this.nombre + " // CUIT: " + this.CUIT);
+        System.out.println("País: " + this.pais + " // Gerente: " + this.gerente + " // Empleados: " + this.cantEmp);
+        System.out.println("-----------------------------------------------------------");
     }
 
 
@@ -22,8 +65,5 @@ public class fabrica {
 
 
 
-    public static void main(String[] args) {
-        
-    }
-    
+
 }
