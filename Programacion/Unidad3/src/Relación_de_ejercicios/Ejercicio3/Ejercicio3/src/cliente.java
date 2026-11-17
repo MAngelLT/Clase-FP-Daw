@@ -55,8 +55,11 @@ public class cliente {
     }
     
     public void imprimir(){
-        System.out.println("Cliente: " + this.nombre + " /// Código: " + this.codigo);
-        System.out.println("DNI: " + this.DNI + " /// Ciudad: " + this.ciudad + " /// Fecha Nac: " + this.fechaNacimiento);
+        System.out.println("Cliente: ");
+        System.out.println("Código: "+ this.codigo);
+        System.out.println("DNI: " + this.DNI );
+        System.out.println("Ciudad: "+this.ciudad);
+        System.out.println("Fecha de nacimiento: "+ this.fechaNacimiento);
         System.out.println("-----------------------------------------------------------");
     }
 

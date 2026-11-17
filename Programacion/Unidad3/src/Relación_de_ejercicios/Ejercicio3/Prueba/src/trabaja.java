@@ -47,8 +47,8 @@ public class trabaja {
 
     //métodos
     public void imprimir() {
-        System.out.println("Empleado: " + this.empleado.getNombre() + " trabaja en Sucursal Nº: " + this.sucursal.getNumero());
-        System.out.println("Día: " + this.dia + " // Horario: " + this.horario);
+        System.out.println("Empleado: " + this.empleado.getNombre() + " trabaja en la  sucursal número: " + this.sucursal.getNumero());
+        System.out.println("Día: " + this.dia + " --- Horario: " + this.horario);
         System.out.println("-----------------------------------------------------------");
     }
 

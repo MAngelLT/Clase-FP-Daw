@@ -54,10 +54,21 @@ public class empleado {
 
     //metodos
     public void imprimir() {
-        System.out.println("Datos del empleado: " + this.nombre + " // Legajo: " + this.legajo + " // DNI: " + this.DNI+ " // Teléfono: " + this.telefono);
+        System.out.println("Datos del empleado: " + this.nombre + " -- Legajo: " + this.legajo + " -- DNI: " + this.DNI);
+        System.out.println("Teléfono: " + this.telefono);
         System.out.println("Domicilio del empleado: " + this.domicilio );
         System.out.println("-----------------------------------------------------------");
     }
+
+    //otra forma .. source action -> generate to string.
+
+    // @Override
+    // public String toString() {
+    //     return "Datos del empleado= [DNI=" + DNI + ", nombre=" + nombre + ", legajo=" + legajo + ", telefono=" + telefono
+    //             + ", domicilio=" + domicilio + "]";
+    // }
+
+    
 
     
 

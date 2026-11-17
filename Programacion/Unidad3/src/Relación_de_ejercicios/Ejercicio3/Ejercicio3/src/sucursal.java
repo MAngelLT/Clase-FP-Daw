@@ -65,11 +65,11 @@ public class sucursal {
 
     //métodos
     public void imprimir() {
-        System.out.println("Sucursal Nº: " + this.numero );
+        System.out.println("Sucursal número: " + this.numero );
         System.out.println("Ciudad: " + this.ciudad);
         System.out.println("Domicilio: " + this.domicilio);
         if (this.cliente != null) {
-            System.out.println("Cliente que compra: " + this.cliente.getNombre() + " // Descuento aplicado: " + this.descuento + "%");
+            System.out.println("Nombre del cliente: " + this.cliente.getNombre() + "--   Descuento: " + this.descuento + "%");
         }
         System.out.println("-----------------------------------------------------------");
     }

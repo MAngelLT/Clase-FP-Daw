@@ -1,0 +1,15 @@
+{
+    "firstName": "Lapo",
+    "lastName": "Miguel Ángel",
+    "age": 25,
+    "phoneNumbers": [
+        {
+            "type": "home",
+            "phone-number": "611111111"
+        },
+        {
+            "type": "work",
+            "phone-number": "7777777777"
+        }
+    ] 
+}

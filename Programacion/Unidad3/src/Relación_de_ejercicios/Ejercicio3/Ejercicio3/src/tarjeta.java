@@ -65,10 +65,10 @@ public class tarjeta {
     public void setCliente(cliente cliente) {
         this.cliente = cliente;
     }
-    //métodos
+    //método
     public void imprimir() {
-        System.out.println("Tarjeta: " + this.nombre + " | Número: " + this.numero);
-        System.out.println("Código: " + this.codigo + " | Vencimiento: " + this.fechaVenc);
+        System.out.println("Tarjeta: " + this.nombre + " -- Número: " + this.numero);
+        System.out.println("Código: " + this.codigo + " -- Vencimiento: " + this.fechaVenc);
         if (this.cliente != null) {
             System.out.println("Titular: " + this.cliente.getNombre());
         }

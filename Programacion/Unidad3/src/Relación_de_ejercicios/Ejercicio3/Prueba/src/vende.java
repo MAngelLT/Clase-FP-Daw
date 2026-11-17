@@ -39,9 +39,10 @@ public class vende {
 
     //métodos
     public void imprimir() {
-        System.out.println("Sucursal Nº: " + this.sucursal.getNumero() + " vende el producto: " + this.producto.getDescripcion());
-        System.out.println("Precio de venta: " + this.precioVenta);
-        System.out.println("-----------------------------------------------------------");
+        System.out.println("Número de sucursal: " + this.sucursal.getNumero() );
+        System.out.println("vende el producto: " + this.producto.getDescripcion() );
+        System.out.println("Precio de venta : " + this.precioVenta);
+        System.out.println("-----------------------------------------------------------" );
     }
     
 }

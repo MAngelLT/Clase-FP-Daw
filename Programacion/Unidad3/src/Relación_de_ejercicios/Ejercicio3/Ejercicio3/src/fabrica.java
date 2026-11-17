@@ -55,8 +55,10 @@ public class fabrica {
 
     //métodos
     public void imprimir() {
-        System.out.println("Fábrica: " + this.nombre + " // CUIT: " + this.CUIT);
-        System.out.println("País: " + this.pais + " // Gerente: " + this.gerente + " // Empleados: " + this.cantEmp);
+        System.out.println("Fábrica: " + this.nombre + " -- Número CUIT: " + this.CUIT);
+        System.out.println("País: " + this.pais);
+        System.out.println("Gerente: " + this.gerente);
+        System.out.println("Empleados: " + this.cantEmp);
         System.out.println("-----------------------------------------------------------");
     }
 

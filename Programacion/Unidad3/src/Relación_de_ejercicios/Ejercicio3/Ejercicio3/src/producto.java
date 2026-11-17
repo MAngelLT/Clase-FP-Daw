@@ -54,8 +54,11 @@ public class producto {
 
     //métodos
     public void imprimir() {
-        System.out.println("Producto: " + this.descripcion + " // Código: " + this.codigo);
-        System.out.println("Color: " + this.color + " // Costo: " + this.costo);
+        System.out.println("Producto: " + this.descripcion); 
+        System.out.println("Código: " + this.codigo);
+        System.out.println("Color: " + this.color );
+        System.out.println("Costo: " + this.costo);
+        //si fabrica tiene algo imprime su nombre
         if (this.fabrica != null) {
             System.out.println("Fábrica: " + this.fabrica.getNombre());
         }
