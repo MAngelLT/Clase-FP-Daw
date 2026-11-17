@@ -26,7 +26,7 @@ public class ProcesarHeroes {
                 String superhero = (String) heroe.get("superhero");
                 String publisher = (String) heroe.get("publisher");
                 String alterEgo = (String) heroe.get("alter_ego");
-                // Mostrar únicamente los héroes de Marvel que empizen por S y su alter ego
+                // Mostrar únicamente los héroes de Marvel que empizen por S y su alter
                 if (superhero.startsWith("S")) {
                     System.out.printf("%-20s %-30s%n",superhero, alterEgo);
                 }
