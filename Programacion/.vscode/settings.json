@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\usuario\\Desktop\\Programación\\Clase-FP-Daw\\json-simple-1.1.1.jar"
+    ]
+}

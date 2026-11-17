@@ -8,10 +8,10 @@ import org.json.simple.parser.JSONParser;
 
 public class ProcesarJSON {
 
-    public static void main(String[] args) {
+    public static void main() {
         try {
              // Lectura del contenido del fichero JSON
-        Object ob = new JSONParser().parse(new FileReader("./JSONFile.json"));
+        Object ob = new JSONParser().parse(new FileReader("./Unidad3/JSONFile.json"));
 
         // Convertir objeto a JSON y procesarlo
         JSONObject js = (JSONObject) ob;
@@ -29,7 +29,7 @@ public class ProcesarJSON {
             
         } catch (IOException e) {
             System.out.println("Error en la lectura JSON");
-        }catch (org.json.simple.parser.ParserException e){
+        }catch (org.json.simple.parser.ParseException e){
             e.printStackTrace();
         }
     }
