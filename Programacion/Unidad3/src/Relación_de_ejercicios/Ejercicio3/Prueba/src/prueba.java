@@ -18,7 +18,7 @@ public class prueba {
         fabrica1.imprimir();
 
         //Creamos un Producto que esta asociado a la Fábrica (Relación 1:1) lo imprimimos
-        producto producto1 = new producto(101, "Taladro Percutor", "Azul", 89.99, fabrica1);
+        producto producto1 = new producto(101, "Sierra", "Morada", 89.99, fabrica1);
         producto1.imprimir();
 
         //Creamos un Cliente y lo imprimimos
