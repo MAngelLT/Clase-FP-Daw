@@ -1,0 +1,65 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body>div{
+    display: flex;
+}
+    
+body>div>div{
+    width: 33%;
+}
+
+
+img{
+    width: 150px;
+}
+
+.rotacion .primera{
+    transform: rotate(25deg); /* rota la en grados*/
+
+}
+
+.rotacion .segunda{
+    transform: rotate(-25deg);
+
+}
+
+.rotacion .tercera{
+    transform: rotate(180deg);
+
+
+}
+
+.escala .primera{
+    transform: scale(2,0.8);
+}
+.escala .segunda{
+    transform: scaleX(1.5);
+}
+.escala .tercera{
+    transform: scaleY(0.5);
+}
+
+.deformar .primera{
+    transform: skewX(50deg);
+}
+.deformar .segunda{
+    transform: skewY(20deg);
+}
+.deformar .tercera{
+    transform: skew(20deg, 50deg);
+}
+
+.origen .primera{
+    transform: rotate(25deg);
+    transform-origin: 100px 200px;
+}
+.origen .segunda{
+    transform: rotate(50deg);
+    transform-origin: 20% 50%;
+}
+.origen .tercera{
+    transform: rotate(25deg);
+    transform-origin: 100px;
+}
