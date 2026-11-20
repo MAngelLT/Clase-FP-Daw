@@ -42,7 +42,7 @@ public class Pais {
     //Método
     public void PIB_per_Capita(){
         double PIB_per_Capita=(this.PIB*100000)/this.poblacion;
-        System.out.println("El PIB per Cápita es de "+PIB_per_Capita+" Euros");
+        System.out.println("El PIB per Cápita de "+ this.nombre+" es de: "+PIB_per_Capita+" Euros");
 
     }
 
