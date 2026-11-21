@@ -33,7 +33,7 @@ public class ejercicio5 {
                 String publisher = (String) heroe.get("publisher");
                 String alterEgo = (String) heroe.get("alter_ego");
 
-                if (publisher.contentEquals("Marvel")&& publisher.startsWith(letraInicial)){//Si el publisher es MArvel y empieza por (letra ingresada)
+                if (publisher.contentEquals("DC Comics")&& superhero.startsWith(letraInicial)){//Si el publisher es Dc Comics  y empieza por (letra ingresada)
 
                     System.out.printf("%-20s %-30s%n",superhero,alterEgo);
 
@@ -47,7 +47,7 @@ public class ejercicio5 {
 
 
         } catch (IOException e) {
-            System.out.println("Error en lectura JSON");
+            System.out.println("Error en lectura JSON "+e.getMessage());
             
         }catch(org.json.simple.parser.ParseException e){
             e.printStackTrace();
@@ -60,7 +60,7 @@ public class ejercicio5 {
 
     public static void main(String[] args) {
 
-        Buscar_con_inicial("I", "./Unidad3/heroes.json");
+        Buscar_con_inicial("G", "./heroes.json");//
 
 
         

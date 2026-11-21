@@ -1,0 +1,2 @@
+Partidas ganadas del jugador1=0, Partidas ganadas del jugador2=3
+Partidas ganadas del jugador1=2, Partidas ganadas del jugador2=3

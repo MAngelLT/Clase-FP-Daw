@@ -6,14 +6,12 @@ public class Carta {
 
     //atributo 
     private int valor;
-
     private Palo palo;
-    private int aleatorio;
-    private int max=12;
-    private int min=1;
 
     //Constructor por defecto
     public Carta(){
+        this.valor = 1;
+        this.palo = Palo.Espadas;
 
     }
 
@@ -52,26 +50,10 @@ public class Carta {
     }
 
 
-    public void Imprimecarta(){
+    public void imprimeCarta(){
         
+        System.out.println("La carta vale: "+this.valor+" de "+ this.palo);
 
-        aleatorio=(int)(Math.random()*(max-min+1))+min;
-        this.valor=aleatorio;
-        
-        
-        System.out.println("La carta vale: "+this.valor);
-        System.out.println("La carta tine este palo: "+ this.palo);
-
-
-
-    }
-
-    public static void main(String[] args) {
-        
-
-        Carta c1=new Carta();
-
-        c1.Imprimecarta();
     }
 
 

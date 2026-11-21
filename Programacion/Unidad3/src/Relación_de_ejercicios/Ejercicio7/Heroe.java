@@ -1,6 +1,6 @@
 package Relación_de_ejercicios.Ejercicio7;
 
-import java.nio.channels.Pipe.SourceChannel;
+
 
 public class Heroe {
 
@@ -9,7 +9,7 @@ public class Heroe {
     private String nombre;
     private int vida;
     private int ataque;
-    private Monstruo monstruo;
+
 
 
 
@@ -17,6 +17,8 @@ public class Heroe {
 
     public Heroe(){
         this.vida=100;
+        this.vida = 100;
+        this.ataque = 10;
 
     }
 
@@ -57,9 +59,12 @@ public class Heroe {
 
     //Métodos
 
-    public void recibirDaño(){
+    public void recibirDaño(int daño){
 
-        this.vida = vida-monstruo.getAtaque();
+        this.vida = this.vida - daño;
+        if (this.vida < 0) {//condicional para mantener el valor de vida por encima de-1
+            this.vida = 0;
+        }
 
     
 
@@ -67,20 +72,13 @@ public class Heroe {
 
     public void mostrarInf(){
 
-        System.out.println("El nombre del heroe es " +getNombre());
-        System.out.println("La vida del hereo es :"+getVida());
+        System.out.println("Heroe: " +getNombre()+ " y su ataque es de : "+getAtaque());
+        System.out.println("La vida del heroe es : "+getVida());
 
 
     }
 
-    public Monstruo getMonstruo() {
-        return monstruo;
-    }
-
-    public void setMonstruo(Monstruo monstruo) {
-        this.monstruo = monstruo;
-    }
-
+    
 
 
     

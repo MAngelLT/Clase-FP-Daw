@@ -5,7 +5,7 @@ public class Monstruo {
     private String nombre;
     private int vida;
     private int ataque;
-    private Heroe heroe;
+  
 
      //constructores
 
@@ -53,23 +53,22 @@ public class Monstruo {
 
     //método
 
-    public void recibirDaño(){
+     public void recibirDaño(int daño){
 
-        vida=vida-heroe.getAtaque();
-        
-        
+        this.vida = this.vida - daño;
+        if (this.vida < 0) {//condicional para mantener el valor de vida por encima de-1
+            this.vida = 0;
+        }
+
+    
+
     }
+
 
     public void mostarInf(){
+        System.out.println("Monstruo:  " +this.nombre);
+        System.out.println("La vida del monstruo es : "+this.vida+ " y su ataque es de : "+ this.ataque);
 
-    }
-
-    public Heroe getHeroe() {
-        return heroe;
-    }
-
-    public void setHeroe(Heroe heroe) {
-        this.heroe = heroe;
     }
 
 
