@@ -1,3 +1,0 @@
-Miguel;15;65673565;Albox
-Antonio;43;66756757;Oria
-Ana;32;65648292;Pulpí
