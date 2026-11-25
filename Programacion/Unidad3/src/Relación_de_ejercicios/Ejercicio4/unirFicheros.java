@@ -32,8 +32,8 @@ public class unirFicheros {
             String nombreF2= archivo2.getName();
 
             // Quitamos la extensión .txt  para combinar los nombres 
-            if (nombreF1.toLowerCase().endsWith(".txt")) {
-                nombreF1 = nombreF1.substring(0, nombreF1.lastIndexOf('.'));
+            if (nombreF1.toLowerCase().endsWith(".txt")) { //convertimos el nombre en minuscula 
+                nombreF1 = nombreF1.substring(0, nombreF1.lastIndexOf('.')); //guardamos el txto del inicio hasta el punto
             }
             if (nombreF2.toLowerCase().endsWith(".txt")) {
                 nombreF2 = nombreF2.substring(0, nombreF2.lastIndexOf('.'));

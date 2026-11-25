@@ -30,15 +30,15 @@ public class prueba {
         tarjeta1.imprimir();
 
         //Creamos una Sucursal donde el Cliente realiza una compra y lo imprimimos
-        sucursal sucursal1 = new sucursal(10, "Calle Mayor 12", "Madrid", cliente1, 15.0);
+        sucursal sucursal1 = new sucursal(10, "Calle 1", "Madrid", cliente1, 15.0);
         sucursal1.imprimir();
 
         //Creamos un Empleado y lo imprimimos
-        empleado empleado1 = new empleado("12345678B", "Ana Pérez", "L-998", 912345678, "Calle Falsa 123");
+        empleado empleado1 = new empleado("12345678B", "Ana Pérez", "998", 912345678, "Calle Falsa 123");
         empleado1.imprimir();
 
         //Relacionamos Empleado y Sucursal con trabajar y lo imprimimos
-        trabaja trabajo1 = new trabaja(sucursal1, empleado1, "Lunes", "08:00 - 16:00");
+        trabaja trabajo1 = new trabaja(sucursal1, empleado1, "Lunes", "08:00 - 17:00");
         trabajo1.imprimir();
 
         //Relacionamos Sucursal y Producto con  la clase vende y lo imprimimos

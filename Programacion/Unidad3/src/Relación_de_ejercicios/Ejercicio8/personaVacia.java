@@ -21,9 +21,9 @@ public class personaVacia {
 
                 //guaradamos los siguientes datos en orden:
                 persona1.setNombre(sc.next());          // la primera parte es nombre
-                persona1.setEdad(sc.nextInt());         // la segunda parte es edad
-                persona1.setTelefono(sc.next());        // la tercera parte es teléfono
-                persona1.setPoblacion(sc.next());       // la cuarta parte es población
+                persona1.setEdad(sc.nextInt());         //  edad
+                persona1.setTelefono(sc.next());        //  teléfono
+                persona1.setPoblacion(sc.next());       // población
 
                 persona1.imprimirInf();     // mostrar antes de pasar a la siguiente línea
 
