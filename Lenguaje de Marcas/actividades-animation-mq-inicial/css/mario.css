@@ -1,0 +1,370 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  /* Contenedor principal de la escena */
+  .escena {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    background-color: #5c94fc; /* Azul cielo clásico de NES */
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Marcador superior (HUD) */
+  .hud {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px 0 #000;
+    letter-spacing: 2px;
+  }
+
+  /* Nubes */
+  .nube {
+    position: absolute;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 0 #a4c4fc;
+  }
+  .nube::before, .nube::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .nube-1 { width: 100px; height: 35px; top: 80px; left: 100px; }
+  .nube-1::before { width: 45px; height: 45px; top: -20px; left: 15px; }
+  .nube-1::after { width: 35px; height: 35px; top: -12px; left: 50px; }
+
+   
+  .nube-2 { width: 140px; height: 40px; top: 65px; left: 520px; }
+  .nube-2::before { width: 55px; height: 55px; top: -25px; left: 25px; }
+  .nube-2::after { width: 45px; height: 45px; top: -18px; left: 70px; }
+
+  /* MONEDA */
+  .moneda {
+    position: absolute;
+    top: 175px; /* Justo encima de los bloques */
+    left: 268px; /* Alineada con el primer bloque sorpresa */
+    width: 24px;
+    height: 34px;
+    background-color: #fca044;
+    border: 2px solid #000;
+    border-radius: 50%;
+    box-shadow: inset -4px 0 0 #c84c0c, inset 3px 0 0 #fce4a0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Ranura interior de la moneda */
+  .moneda::after {
+    content: '';
+    width: 4px;
+    height: 18px;
+    background-color: #c84c0c;
+    border-left: 1px solid #fce4a0;
+  }
+
+
+ 
+
+  /* Fila de bloques flotantes */
+  .bloques {
+    position: absolute;
+    top: 210px;
+    left: 220px;
+    display: flex;
+  }
+
+  .bloque {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  /* Bloque de ladrillo */
+  .ladrillo {
+    background-color: #c84c0c;
+    background-image: 
+      linear-gradient(335deg, rgba(0,0,0,0.3) 23px, transparent 23px),
+      linear-gradient(155deg, rgba(0,0,0,0.3) 23px, transparent 23px);
+    box-shadow: inset 2px 2px 0 #fca044;
+  }
+
+  /* Bloque sorpresa (?) */
+  .sorpresa {
+    background-color: #fca044;
+    color: #9c4a00;
+    text-shadow: 2px 2px 0 #000;
+    box-shadow: inset 3px 3px 0 #fce4a0, inset -3px -3px 0 #c84c0c;
+    animation: brillo 1s infinite alternate;
+  }
+
+  @keyframes brillo {
+    from { background-color: #fca044; }
+    to { background-color: #e47400; }
+  }
+
+  /* Arbusto */
+  .arbusto {
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
+    width: 110px;
+    height: 35px;
+    background: #80d010;
+    border: 2px solid #000;
+    border-radius: 25px 25px 0 0;
+    box-shadow: inset 4px 4px 0 #b8f818;
+  }
+
+  /* Tubería verde */
+  .tuberia {
+    position: absolute;
+    bottom: 60px;
+    left: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tuberia-boca {
+    width: 84px;
+    height: 32px;
+    background: linear-gradient(90deg, #00a800 0%, #80d010 25%, #00a800 55%, #005800 100%);
+    border: 2px solid #000;
+    z-index: 2;
+  }
+
+  .tuberia-cuerpo {
+    width: 72px;
+    height: 68px;
+    background: linear-gradient(90deg, #00a800 0%, #80d010 25%, #00a800 55%, #005800 100%);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    z-index: 2;
+  }
+/* MARIO CSS */
+  .mario {
+    position: absolute;
+    top: -54px;
+    left: 20px;
+    width: 44px;
+    height: 58px;
+    z-index: 1; /* Detrás de la boca de la tubería */
+    
+  }
+
+
+  /* Gorra de Mario */
+  .mario-gorra {
+    position: relative;
+    width: 34px;
+    height: 14px;
+    background: #d82800;
+    border: 2px solid #000;
+    border-radius: 14px 14px 0 0;
+    margin-left: 2px;
+  }
+
+  /* Visera mirando hacia la izquierda */
+  .mario-visera {
+    position: absolute;
+    top: 8px;
+    left: -6px;
+    width: 18px;
+    height: 6px;
+    background: #d82800;
+    border: 2px solid #000;
+    border-radius: 4px 0 0 4px;
+  }
+
+  /* Cabeza y rasgos */
+  .mario-cabeza {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background: #fca044;
+    border: 2px solid #000;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    margin-left: 5px;
+  }
+
+  /* Patilla / Pelo */
+  .mario-cabeza::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 12px;
+    background: #6c3800;
+  }
+
+  /* Ojo */
+  .mario-ojo {
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 4px;
+    height: 6px;
+    background: #000;
+    border-radius: 2px;
+  }
+
+  /* Nariz */
+  .mario-nariz {
+    position: absolute;
+    top: 6px;
+    left: -5px;
+    width: 9px;
+    height: 7px;
+    background: #fca044;
+    border: 2px solid #000;
+    border-right: none;
+    border-radius: 50% 0 0 50%;
+  }
+
+  /* Bigote */
+  .mario-bigote {
+    position: absolute;
+    top: 12px;
+    left: -2px;
+    width: 14px;
+    height: 4px;
+    background: #000;
+    border-radius: 2px;
+  }
+
+  /* Torso (camiseta roja y peto azul) */
+  .mario-cuerpo {
+    position: relative;
+    width: 34px;
+    height: 24px;
+    background: #d82800;
+    border: 2px solid #000;
+    border-top: none;
+    border-radius: 6px 6px 0 0;
+    margin-left: 3px;
+  }
+
+  /* Peto azul */
+  .mario-peto {
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+    width: 22px;
+    height: 15px;
+    background: #0058f8;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+  }
+
+  /* Tirante y botón amarillo */
+  .mario-peto::before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: 3px;
+    width: 5px;
+    height: 9px;
+    background: #0058f8;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+
+  .mario-peto::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 4px;
+    height: 4px;
+    background: #fce4a0;
+    border-radius: 50%;
+  }
+  /* Suelo */
+  .suelo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #c84c0c;
+    border-top: 4px solid #000;
+    background-image: 
+      radial-gradient(#fca044 15%, transparent 16%),
+      radial-gradient(#000 15%, transparent 16%);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+  }
+
+
+  .nube-1{
+    animation: nube-1 30s infinite;
+  }
+  .nube-2{
+    animation: nube-2 60s infinite;
+  }
+  
+
+  @keyframes   nube-1 {
+    0%{left:-10%}
+    50%{left: 50%}
+    100%{left:110%}
+
+
+    
+  }
+
+  @keyframes  nube-2{
+    0%{left:-10%}
+    50%{left: 50%}
+    100%{left:110%}
+
+  }
+
+  .moneda{
+    animation:moneda 1s infinite ;
+  }
+
+  @keyframes moneda{
+    from {top: 175px;}/*{scaleX(1)}*/  
+    to {top:155px} /*{transform: transalateY(-50px) scaleX(0.35)}*/
+    
+    /*{translateYtransform: (50px) scaleX(1)}*/
+  }
+
+  .mario{
+    animation: mario 2s infinite ease-in-out;
+    z-index: 1;
+  }
+  @keyframes mario{
+    0%,15%{/*top: 40px;*/ transform: translateY(58px);} /*Escondido dentro de la tuberia*/
+    40%,70%{transform: translateY(0px);}/*Asomado completamente*/
+    70%,100%{/*bottom:54px*/ transform: translateY(58px);}/*Vuelve a bajar*/
+  }

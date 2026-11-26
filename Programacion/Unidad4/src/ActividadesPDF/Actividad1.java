@@ -10,6 +10,10 @@ public class Actividad1 {
 
         System.out.println(buscaEnVector(num,4));
 
+
+
+
+        
     }
 
     public static int buscaEnVector(int[]num,int numero){
@@ -27,16 +31,23 @@ public class Actividad1 {
     public static int buscaEnVectorWhile(int[]num,int numero){
         int encontrado=-1;
         boolean salida=false;
+        int i=0;
 
 
         while (! salida){
             if (num[i]==numero){
                 encontrado=i;
-                salida=true
+                salida=true;
             }
             i++;
-                
-    }
+        }        
+    }}
+
+
+
+
+
+    
 
 
     
